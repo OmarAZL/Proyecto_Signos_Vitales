@@ -1,18 +1,17 @@
 #include <Arduino.h>
 #include "Sensors/DS18B20.h"
 #include "Screen.h"
+#include "config.h"
 
-DS18B20 temperatureSensor(2);
-Screen screen(4, 5, 128, 64); // SDL pin 4, SCL pin 5, width 128, height 64
+DS18B20 temperatureSensor(DS18B20_PIN, DS18B20_RESOLUTION); // Pin y resolución del sensor de temperatura DS18B20
+Screen screen(SCREEN_SDA, SCREEN_SCL, SCREEN_WIDTH, SCREEN_HEIGHT);
 
-// put function declarations here:
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(115200);
   temperatureSensor.begin();
 }
 
-void showTemperature() {
+void serialTemperature() {
   float temp = temperatureSensor.getTemperature();
   Serial.print("Temperatura: ");
   if (isnan(temp)) {
@@ -25,7 +24,7 @@ void showTemperature() {
 
 void loop() {
   screen.showMessage("Leyendo temperatura...");
-  showTemperature();
+  serialTemperature();
   delay(2000); // Espera 2 segundos antes de la siguiente lectura
   // put your main code here, to run repeatedly:
 }

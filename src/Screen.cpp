@@ -14,6 +14,7 @@ void Screen::clear() {
 }
 
 void Screen::showMessage(const String& message) {
+    clear();
     display.setTextSize(1); // Normal size
     display.setTextColor(SSD1306_WHITE);
     display.setCursor(0, 0);
