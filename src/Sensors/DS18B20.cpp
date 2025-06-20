@@ -16,3 +16,10 @@ float DS18B20::getTemperature() {
     }
     return temperature;
 }
+
+bool DS18B20::isConnected() {
+    if (_sensors.getDeviceCount() > 0) {
+        return true;
+    }
+    return false; // No device found
+}

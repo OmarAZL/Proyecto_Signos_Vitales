@@ -1,14 +1,17 @@
 #include <Arduino.h>
 #include "Sensors/DS18B20.h"
+#include "Sensors/AD8232.h"
 #include "Screen.h"
 #include "config.h"
 
 DS18B20 temperatureSensor(DS18B20_PIN, DS18B20_RESOLUTION); // Pin y resolución del sensor de temperatura DS18B20
 Screen screen(SCREEN_SDA, SCREEN_SCL, SCREEN_WIDTH, SCREEN_HEIGHT);
+AD8232 ecgSensor(AD8232_OUT_PIN, AD8232_LOPLUS_PIN, AD8232_LOMINUS_PIN);
 
 void setup() {
   Serial.begin(115200);
   temperatureSensor.begin();
+  ecgSensor.begin();
 }
 
 void serialTemperature() {
