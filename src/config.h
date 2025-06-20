@@ -9,3 +9,6 @@
 #define AD8232_OUT_PIN 34      // Pin analógico de salida ECG
 #define AD8232_LOPLUS_PIN 32   // Pin LO+
 #define AD8232_LOMINUS_PIN 33  // Pin LO-
+
+#define GY906_ADDRESS 0x5A
+#define MAX30100_ADDRESS 0x57
