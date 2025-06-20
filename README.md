@@ -4,6 +4,9 @@ Proyecto universitario desarrollado para la **Universidad de Oriente (UDO)**
 - **Microcontrolador:** ESP32
 - **Sensores/Dispositivos:**  
   - Sensor DS18B20 (temperatura).  
+  - Sensor GY-906 (temperatura).
+  - AD8232 (Electrocardiograma).
+  - MAX30100.
   - Pantalla OLED I2C.
 
 ## ⚙️ Configuración  
