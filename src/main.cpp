@@ -7,12 +7,13 @@
 #include "config.h"
 
 DS18B20 temperatureSensor(DS18B20_PIN, DS18B20_RESOLUTION); // Pin y resolución del sensor de temperatura DS18B20
-Screen screen(PIN_SDA, PIN_SCL, SCREEN_WIDTH, SCREEN_HEIGHT);
+Screen screen(SCREEN_ADDRESS, SCREEN_WIDTH, SCREEN_HEIGHT);
 AD8232 ecgSensor(AD8232_OUT_PIN, AD8232_LOPLUS_PIN, AD8232_LOMINUS_PIN);
-GY906 gy906(PIN_SDA, PIN_SCL, GY906_ADDRESS);
-MAX30100 max30100(PIN_SDA, PIN_SCL, MAX30100_ADDRESS);
+GY906 gy906(GY906_ADDRESS);
+MAX30100 max30100(MAX30100_ADDRESS);
 
 void setup() {
+  Wire.begin(PIN_SDA, PIN_SCL); // Inicializa I2C con los pines SDA y SCL
   Serial.begin(115200);
   temperatureSensor.begin();
   ecgSensor.begin();

@@ -1,12 +1,11 @@
 #include "Screen.h"
 
-Screen::Screen(uint8_t SDA, uint8_t SCL, int width, int height)
-    : display(Adafruit_SSD1306(width, height, &Wire, -1)), _SDA(SDA), _SCL(SCL) {
+Screen::Screen(uint8_t address, int width, int height)
+    : display(Adafruit_SSD1306(width, height, &Wire, -1)), _address(address) {
 }
 
 bool Screen::begin() {
-    Wire.begin(_SDA, _SCL);
-    return display.begin(SSD1306_SWITCHCAPVCC, 0x3C); // Default I2C address for SSD1306
+    return display.begin(SSD1306_SWITCHCAPVCC, _address);
 }
 
 void Screen::clear() {

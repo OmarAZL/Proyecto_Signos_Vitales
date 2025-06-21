@@ -4,12 +4,11 @@
 
 class Screen {
 public:
-    Screen(uint8_t SDA, uint8_t SCL, int width, int height);
+    Screen(uint8_t address, int width, int height);
     bool begin();
     void clear();
     void showMessage(const String& message);
 private:
     Adafruit_SSD1306 display;
-    uint8_t _SDA;
-    uint8_t _SCL;
+    uint8_t _address;
 };

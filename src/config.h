@@ -1,5 +1,7 @@
 #define SCREEN_WIDTH 128 // Ancho de la pantalla OLED
 #define SCREEN_HEIGHT 64 // Alto de la pantalla OLED
+#define SCREEN_ADDRESS 0x3C // Dirección I2C de la pantalla OLED
+
 #define PIN_SDA 21 // Pin SDA
 #define PIN_SCL 22 // Pin SCL 
 

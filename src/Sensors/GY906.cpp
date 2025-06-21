@@ -1,9 +1,15 @@
 #include "GY906.h"
 
-GY906::GY906(uint8_t SDA, uint8_t SCL, uint8_t address) : _SDA(SDA), _SCL(SCL), _address(address) {}
+GY906::GY906(uint8_t address) : _address(address) {}
 
 void GY906::begin() {
-    Wire.begin(_SDA, _SCL);
+    Wire.beginTransmission(_address);
+    Wire.write(0x01); // Write to configuration register
+    Wire.write(0x00); // Set to normal mode
+    Wire.endTransmission();
+    
+    // Wait for the sensor to initialize
+    delay(100);
 }
 
 float GY906::readObjectTempC() {
