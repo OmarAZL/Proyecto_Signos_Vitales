@@ -1,9 +1,9 @@
 #include "GY906.h"
 
-GY906::GY906(uint8_t address) : _address(address) {}
+GY906::GY906(uint8_t SDA, uint8_t SCL, uint8_t address) : _SDA(SDA), _SCL(SCL), _address(address) {}
 
 void GY906::begin() {
-    Wire.begin();
+    Wire.begin(_SDA, _SCL);
 }
 
 float GY906::readObjectTempC() {

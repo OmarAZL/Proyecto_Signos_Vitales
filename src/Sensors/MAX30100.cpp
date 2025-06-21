@@ -1,9 +1,9 @@
 #include "MAX30100.h"
 
-MAX30100::MAX30100(uint8_t address) : _address(address) {}
+MAX30100::MAX30100(uint8_t SDA, uint8_t SCL, uint8_t address) : _SDA(SDA), _SCL(SCL), _address(address) {}
 
 void MAX30100::begin() {
-    Wire.begin();
+    Wire.begin(_SDA, _SCL);
     // Configuración básica del sensor (puedes expandir según tu librería o necesidades)
     Wire.beginTransmission(_address);
     Wire.write(0x06); // Modo SpO2
