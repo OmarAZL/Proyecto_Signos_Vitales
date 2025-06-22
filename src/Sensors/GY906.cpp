@@ -1,7 +1,5 @@
 #include "GY906.h"
 
-GY906::GY906(uint8_t address) : _address(address) {}
-
 void GY906::begin() {
     Wire.beginTransmission(_address);
     Wire.write(0x01); // Write to configuration register

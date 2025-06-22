@@ -1,7 +1,7 @@
 #include "Screen.h"
 
 Screen::Screen(uint8_t address, int width, int height)
-    : display(Adafruit_SSD1306(width, height, &Wire, -1)), _address(address) {
+    : I2CDevice(address), display(Adafruit_SSD1306(width, height, &Wire, -1)) {
 }
 
 bool Screen::begin() {

@@ -13,4 +13,5 @@
 #define AD8232_LOMINUS_PIN 33  // Pin LO-
 
 #define GY906_ADDRESS 0x5A
-#define MAX30100_ADDRESS 0x57
+
+#define REPORTING_PERIOD_MS 1000 // Periodo de reporte de datos en milisegundos

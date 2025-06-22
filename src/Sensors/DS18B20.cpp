@@ -14,6 +14,15 @@ float DS18B20::getTemperature() {
     if (temperature == DEVICE_DISCONNECTED_C) {
         return NAN; // Device disconnected or error
     }
+    // Actualiza las temperaturas mínima y máxima
+    if(temperature < _minTemperature) {
+        _minTemperature = temperature; // Actualiza la temperatura mínima
+    }
+
+    if(temperature > _maxTemperature) {
+        _maxTemperature = temperature; // Actualiza la temperatura máxima
+    }
+
     return temperature;
 }
 
