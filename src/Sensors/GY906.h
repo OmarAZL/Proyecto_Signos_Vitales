@@ -6,4 +6,6 @@ public:
     void begin();
     float readObjectTempC();
     float readAmbientTempC();
+private:
+    float readTemp(uint8_t reg);
 };

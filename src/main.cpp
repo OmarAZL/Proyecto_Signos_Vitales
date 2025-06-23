@@ -40,7 +40,7 @@ void setup() {
     Serial.println("AD8232: Electrodos conectados.");
   }
 
-  float tempObj = gy906.readObjectTempC();
+  float tempObj = gy906.readAmbientTempC();
   if (isnan(tempObj)) {
     Serial.println("GY-906 no detectado!");
      for(;;);
@@ -55,6 +55,7 @@ void setup() {
     Serial.println("MAX30100 detectado correctamente.");
     max30100.setOnBeatDetectedCallback(onBeatDetected);
   }
+
   delay(1000); // Espera para estabilizar la comunicación
 
 }

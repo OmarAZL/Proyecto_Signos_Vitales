@@ -11,22 +11,16 @@ void GY906::begin() {
 }
 
 float GY906::readObjectTempC() {
-    Wire.beginTransmission(_address);
-    Wire.write(0x07);
-    Wire.endTransmission(false);
-    Wire.requestFrom(_address, (uint8_t)3);
-    if (Wire.available() >= 3) {
-        uint16_t temp = Wire.read();
-        temp |= Wire.read() << 8;
-        Wire.read(); // PEC
-        return (temp * 0.02) - 273.15;
-    }
-    return NAN;
+    return readTemp(0x07);
 }
 
 float GY906::readAmbientTempC() {
+    return readTemp(0x06);
+}
+
+float GY906::readTemp(uint8_t reg) {
     Wire.beginTransmission(_address);
-    Wire.write(0x06);
+    Wire.write(reg);
     Wire.endTransmission(false);
     Wire.requestFrom(_address, (uint8_t)3);
     if (Wire.available() >= 3) {
