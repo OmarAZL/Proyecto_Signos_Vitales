@@ -1,9 +1,11 @@
+#ifndef I2CDEVICE_H
+#define I2CDEVICE_H
+
 #include <Wire.h>
 
 class I2CDevice {
 public:
     I2CDevice(uint8_t address) : _address(address) {}
-    virtual ~I2CDevice() = default;
 
     virtual bool isConnected() {
         Wire.beginTransmission(_address);
@@ -13,3 +15,5 @@ public:
 protected:
     uint8_t _address;
 };
+
+#endif // I2CDEVICE_H

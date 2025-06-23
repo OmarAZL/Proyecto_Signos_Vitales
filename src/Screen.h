@@ -6,7 +6,6 @@ class Screen : public I2CDevice {
 public:
     Screen(uint8_t address, int width, int height);
     bool begin();
-    bool isConnected();
     void clear();
     void showMessage(const String& message);
 private:
