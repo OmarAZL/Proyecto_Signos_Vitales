@@ -8,6 +8,8 @@ public:
     bool begin();
     void clear();
     void showMessage(const String& message);
+    void showAllSensors(float &temperature1, float &temperature2, float &ecg);
+    Adafruit_SSD1306& getDisplay() { return display; }
 private:
     Adafruit_SSD1306 display;
 };
