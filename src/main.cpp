@@ -15,10 +15,8 @@ unsigned long LastReport = 0; // Variable para almacenar el tiempo del último r
 void setup() {
   Serial.begin(115200);
   Wire.begin(PIN_SDA, PIN_SCL); // Inicializa I2C con los pines SDA y SCL
-  screen.begin(); // Inicializa la pantalla OLED
+  screen.begin(); 
   ds18b20.begin();
-  //ad8232.begin();
-  //gy906.begin();
 
   if(!screen.isConnected()) {
     Serial.println("Pantalla OLED no detectada!");
@@ -38,12 +36,6 @@ void setup() {
     delay(1000); // Espera 1 segundo antes de volver a verificar
     ds18b20Connected = ds18b20.isConnected();
   }
-
-  /*while(!gy906Connected) {
-    screen.showMessage("Esperando GY-906...");
-    delay(1000); // Espera 1 segundo antes de volver a verificar
-    gy906Connected = gy906.isConnected();
-  }*/
 
   delay(2000); // Espera para estabilizar la comunicación
 
