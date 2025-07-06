@@ -2,6 +2,13 @@
 #define SCREEN_HEIGHT 64 // Alto de la pantalla OLED
 #define SCREEN_ADDRESS 0x3C // Dirección I2C de la pantalla OLED
 
+#define SCREEN_LCD_RS 19
+#define SCREEN_LCD_E 23
+#define SCREEN_LCD_D4 18
+#define SCREEN_LCD_D5 17
+#define SCREEN_LCD_D6 16
+#define SCREEN_LCD_D7 15
+
 #define PIN_SDA 21 // Pin SDA
 #define PIN_SCL 22 // Pin SCL 
 

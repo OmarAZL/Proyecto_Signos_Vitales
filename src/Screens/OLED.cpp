@@ -1,18 +1,18 @@
-#include "Screen.h"
+#include "Screens/OLED.h"
 
-Screen::Screen(uint8_t address, int width, int height)
+OLED::OLED(uint8_t address, int width, int height)
     : I2CDevice(address), display(Adafruit_SSD1306(width, height, &Wire, -1)) {
 }
 
-bool Screen::begin() {
+bool OLED::begin() {
     return display.begin(SSD1306_SWITCHCAPVCC, _address);
 }
 
-void Screen::clear() {
+void OLED::clear() {
     display.clearDisplay();
 }
 
-void Screen::showAllSensors(float &temperature1, float &temperature2, float &ecg) {
+void OLED::showAllSensors(float &temperature1, float &temperature2, float &ecg) {
     display.clearDisplay();
     display.setTextSize(1); // Normal size
     display.setTextColor(SSD1306_WHITE);
@@ -31,7 +31,7 @@ void Screen::showAllSensors(float &temperature1, float &temperature2, float &ecg
     display.display();
 }
 
-void Screen::showMessage(const String& message) {
+void OLED::showMessage(const String& message) {
     display.clearDisplay();
     display.setTextSize(1); // Normal size
     display.setTextColor(SSD1306_WHITE);

@@ -1,0 +1,179 @@
+nRF Connect, 2025-07-03
+Dovant TENSUS 1200 (67:7F:CF:F5:42:60)
+V	17:22:13.493	Connecting to 67:7F:CF:F5:42:60...
+D	17:22:13.493	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	17:22:14.514	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+D	17:22:14.533	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	17:22:14.533	Connected to 67:7F:CF:F5:42:60
+V	17:22:14.553	Discovering services...
+D	17:22:14.553	gatt.discoverServices()
+I	17:22:14.892	Connection parameters updated (interval: 7.5ms, latency: 0, timeout: 5000ms)
+D	17:22:15.205	[Callback] Services discovered with status: 0
+I	17:22:15.205	Services discovered
+V	17:22:15.218	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+Unknown Service (0000a610-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [I] (0000a620-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [N] (0000a621-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [WNR] (0000a622-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [W] (0000a623-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000a624-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000a625-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (0000a640-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (0000a641-0000-1000-8000-00805f9b34fb)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- System ID [R] (0x2A23)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000ff01-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000ff02-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+D	17:22:15.218	gatt.setCharacteristicNotification(0000a620-0000-1000-8000-00805f9b34fb, true)
+D	17:22:15.222	gatt.setCharacteristicNotification(0000a621-0000-1000-8000-00805f9b34fb, true)
+D	17:22:15.225	gatt.setCharacteristicNotification(0000a625-0000-1000-8000-00805f9b34fb, true)
+D	17:22:15.228	gatt.setCharacteristicNotification(0000ff02-0000-1000-8000-00805f9b34fb, true)
+I	17:22:15.301	Connection parameters updated (interval: 48.75ms, latency: 0, timeout: 5000ms)
+D	17:22:38.650	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to TURNING OFF
+I	17:22:38.650	Disconnected
+D	17:22:38.654	gatt.close()
+D	17:22:38.661	wait(200)
+D	17:22:39.286	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to OFF
+D	17:22:42.592	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to TURNING ON
+D	17:22:43.360	[Broadcast] Action received: android.bluetooth.adapter.action.STATE_CHANGED, state changed to ON
+D	17:22:52.084	[Broadcast] Action received: android.bluetooth.device.action.BOND_STATE_CHANGED, bond state changed to: BONDING (11)
+D	17:22:57.356	[Broadcast] Action received: android.bluetooth.device.action.BOND_STATE_CHANGED, bond state changed to: NONE (10), reason: REMOVED (9)
+I	17:22:57.357	Bonding failed, reason: REMOVED (9)
+V	17:23:39.258	Connecting to 67:7F:CF:F5:42:60...
+D	17:23:39.264	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	17:23:39.303	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	17:23:39.303	Connected to 67:7F:CF:F5:42:60
+V	17:23:39.367	Discovering services...
+D	17:23:39.367	gatt.discoverServices()
+I	17:23:39.603	Connection parameters updated (interval: 7.5ms, latency: 0, timeout: 5000ms)
+D	17:23:39.910	[Callback] Services discovered with status: 0
+I	17:23:39.912	Services discovered
+V	17:23:39.930	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+Unknown Service (0000a610-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [I] (0000a620-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [N] (0000a621-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [WNR] (0000a622-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [W] (0000a623-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000a624-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000a625-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (0000a640-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (0000a641-0000-1000-8000-00805f9b34fb)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- System ID [R] (0x2A23)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000ff01-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000ff02-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+D	17:23:39.931	gatt.setCharacteristicNotification(0000a620-0000-1000-8000-00805f9b34fb, true)
+D	17:23:39.934	gatt.setCharacteristicNotification(0000a621-0000-1000-8000-00805f9b34fb, true)
+D	17:23:39.935	gatt.setCharacteristicNotification(0000a625-0000-1000-8000-00805f9b34fb, true)
+D	17:23:39.937	gatt.setCharacteristicNotification(0000ff02-0000-1000-8000-00805f9b34fb, true)
+I	17:23:40.012	Connection parameters updated (interval: 48.75ms, latency: 0, timeout: 5000ms)
+I	17:23:40.132	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 10-0A-00-07-F0-4C-70-5C-AA-39-01-28
+A	17:23:40.132	"(0x) 10-0A-00-07-F0-4C-70-5C-AA-39-01-28" received
+I	17:23:40.462	Connection parameters updated (interval: 26.25ms, latency: 0, timeout: 6000ms)
+I	17:23:40.808	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:23:40.809	"(0x) 00-01-01" received
+I	17:23:43.168	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:23:43.168	"(0x) 00-01-01" received
+I	17:23:43.218	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 10-05-11-00-11-02-01
+A	17:23:43.218	"(0x) 10-05-11-00-11-02-01" received
+I	17:23:43.270	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:23:43.270	"(0x) 00-01-01" received
+I	17:23:43.324	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 10-03-00-04-01
+A	17:23:43.324	"(0x) 10-03-00-04-01" received
+D	17:23:43.438	[Callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	17:23:43.438	Disconnected
+D	17:23:43.485	[Broadcast] Action received: android.bluetooth.device.action.ACL_DISCONNECTED
+D	17:28:55.877	[Broadcast] Action received: android.bluetooth.device.action.ACL_CONNECTED
+D	17:28:55.889	gatt.close()
+D	17:28:55.913	wait(200)
+V	17:28:56.121	Connecting to 67:7F:CF:F5:42:60...
+D	17:28:56.126	gatt = device.connectGatt(autoConnect = false, TRANSPORT_LE, preferred PHY = LE 1M)
+D	17:28:56.139	[Callback] Connection state changed with status: 0 and new state: CONNECTED (2)
+I	17:28:56.139	Connected to 67:7F:CF:F5:42:60
+V	17:28:56.149	Discovering services...
+D	17:28:56.149	gatt.discoverServices()
+I	17:28:56.287	Connection parameters updated (interval: 7.5ms, latency: 0, timeout: 5000ms)
+D	17:28:56.583	[Callback] Services discovered with status: 0
+I	17:28:56.583	Services discovered
+V	17:28:56.611	Generic Access (0x1800)
+- Device Name [R W] (0x2A00)
+- Appearance [R] (0x2A01)
+- Peripheral Preferred Connection Parameters [R] (0x2A04)
+Generic Attribute (0x1801)
+Unknown Service (0000a610-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [I] (0000a620-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [N] (0000a621-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [WNR] (0000a622-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [W] (0000a623-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000a624-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000a625-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+- Unknown Characteristic [R] (0000a640-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [R] (0000a641-0000-1000-8000-00805f9b34fb)
+Device Information (0x180A)
+- Manufacturer Name String [R] (0x2A29)
+- Model Number String [R] (0x2A24)
+- Serial Number String [R] (0x2A25)
+- Hardware Revision String [R] (0x2A27)
+- Firmware Revision String [R] (0x2A26)
+- Software Revision String [R] (0x2A28)
+- System ID [R] (0x2A23)
+Unknown Service (0000ff00-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [WNR] (0000ff01-0000-1000-8000-00805f9b34fb)
+- Unknown Characteristic [N] (0000ff02-0000-1000-8000-00805f9b34fb)
+   Client Characteristic Configuration (0x2902)
+D	17:28:56.611	gatt.setCharacteristicNotification(0000a620-0000-1000-8000-00805f9b34fb, true)
+D	17:28:56.624	gatt.setCharacteristicNotification(0000a621-0000-1000-8000-00805f9b34fb, true)
+D	17:28:56.628	gatt.setCharacteristicNotification(0000a625-0000-1000-8000-00805f9b34fb, true)
+D	17:28:56.632	gatt.setCharacteristicNotification(0000ff02-0000-1000-8000-00805f9b34fb, true)
+I	17:28:56.693	Connection parameters updated (interval: 48.75ms, latency: 0, timeout: 5000ms)
+I	17:28:56.947	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 10-0A-00-07-F0-4C-70-5C-AA-39-01-64
+A	17:28:56.947	"(0x) 10-0A-00-07-F0-4C-70-5C-AA-39-01-64" received
+I	17:28:57.195	Connection parameters updated (interval: 26.25ms, latency: 0, timeout: 6000ms)
+I	17:28:57.593	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:28:57.593	"(0x) 00-01-01" received
+I	17:29:00.006	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:29:00.006	"(0x) 00-01-01" received
+I	17:29:00.058	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 10-05-11-00-11-02-01
+A	17:29:00.058	"(0x) 10-05-11-00-11-02-01" received
+I	17:29:00.111	Notification received from 0000a625-0000-1000-8000-00805f9b34fb, value: (0x) 00-01-01
+A	17:29:00.111	"(0x) 00-01-01" received
+I	17:29:00.190	Notification received from 0000a621-0000-1000-8000-00805f9b34fb, value: (0x) 20-12-49-02-00-00-00-00-00-5E-00-78-00-51-00-64-00-00-00-55
+A	17:29:00.190	"(0x) 20-12-49-02-00-00-00-00-00-5E-00-78-00-51-00-64-00-00-00-55" received
+I	17:29:00.201	Indication received from 0000a620-0000-1000-8000-00805f9b34fb, value: (0x) 21-09-01-14-B1-2B-78-AC-05-B8-EB
+A	17:29:00.201	"(0x) 21-09-01-14-B1-2B-78-AC-05-B8-EB" received
+D	17:30:06.335	[Callback] Connection state changed with status: 0 and new state: DISCONNECTED (0)
+I	17:30:06.335	Disconnected
+D	17:30:06.381	[Broadcast] Action received: android.bluetooth.device.action.ACL_DISCONNECTED

@@ -1,0 +1,75 @@
+Executing task: C:\Users\PERSONAL\.platformio\penv\Scripts\platformio.exe device monitor --port COM3 
+
+--- Terminal on COM3 | 115200 8-N-1
+--- Available filters and text transformations: colorize, debug, default, direct, esp32_exception_decoder, hexlify, log2file, nocontrol, printable, send_on_enter, time
+--- More details at https://bit.ly/pio-monitor-filters
+--- Quit: Ctrl+C | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H
+E (493) esp_core_dump_flash: Core dump␀␘Vх�check failed:
+Calculated checksum='04e998bb'
+Image checksum='ffffffff'
+Conectado al tensiómetro
+[ 10449][E][BLERemoteCharacteristic.cpp:289] retrieveDescriptors(): esp_ble_gattc_get_all_descr: Unknown
+[ 10459][E][BLERemoteCharacteristic.cpp:289] retrieveDescriptors(): esp_ble_gattc_get_all_descr: Unknown
+[ 10469][E][BLERemoteCharacteristic.cpp:289] retrieveDescriptors(): esp_ble_gattc_get_all_descr: Unknown
+[ 10479][E][BLERemoteCharacteristic.cpp:289] retrieveDescriptors(): esp_ble_gattc_get_all_descr: Unknown
+[ 10489][E][BLERemoteCharacteristic.cpp:289] retrieveDescriptors(): esp_ble_gattc_get_all_descr: Unknown
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
+Conectado al tensiómetro
+[A621] Notificación: 10 0A 00 07 F0 4C 70 5C AA 39 01 64 
+Callback A621: 10 0A 00 07 F0 4C 70 5C AA 39 01 64
+Desconectado del tensiómetro
+Intentando reconectar...
