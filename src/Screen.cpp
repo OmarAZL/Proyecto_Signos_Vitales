@@ -40,3 +40,19 @@ void Screen::showMessage(const String& message) {
     display.display(); // Update the display with the new message
 }
 
+void Screen::drawECGPoint(int y) {
+    if (lastY == -1) lastY = y;
+    display.drawLine(currentX - 1, lastY, currentX, y, SSD1306_WHITE);
+    lastY = y;
+    currentX++;
+    if (currentX >= display.width()) {
+        currentX = 0;
+        lastY = -1;
+        display.clearDisplay();
+    }
+}
+
+void Screen::updateDisplay() {
+    display.display();
+}
+

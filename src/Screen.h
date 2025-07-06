@@ -10,6 +10,10 @@ public:
     void showMessage(const String& message);
     void showAllSensors(float &temperature1, float &temperature2, float &ecg);
     Adafruit_SSD1306& getDisplay() { return display; }
+    void drawECGPoint(int y);
+    void updateDisplay();
 private:
     Adafruit_SSD1306 display;
+    int currentX = 0;
+    int lastY = -1;
 };

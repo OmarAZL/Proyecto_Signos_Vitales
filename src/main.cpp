@@ -51,16 +51,32 @@ void setup() {
   
 }
 
+float temperatura1 = NAN;
+float temperature2 = NAN;
+float ecg = NAN;
+
+unsigned long screen_report = 0;
+
 void loop() {
   unsigned long now = millis();
 
-  if(now - LastReport >= 200) {
+  if(now - LastReport >= 20) {
+    LastReport = now;
     float temperatura1 = ds18b20.getTemperature();
     float temperature2 = NAN;
     float ecg = NAN;
 
-    screen.showAllSensors(temperatura1, temperature2, ecg);
+    //screen.showAllSensors(temperatura1, temperature2, ecg);
 
   }
+
+  if (true && (now - screen_report >= 50)) { // Actualiza la pantalla cada 2 segundos
+    screen_report = now;
+    int ecg = 0;
+    int ecgMapped = map(ecg, 0, 4095, 63, 0);  // OLED de 64 píxeles alto
+    screen.drawECGPoint(ecgMapped);
+    screen.updateDisplay();
+}
+
 }
 
