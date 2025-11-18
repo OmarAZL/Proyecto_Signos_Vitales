@@ -5,6 +5,8 @@ public:
     AD8232(uint8_t pinOUT, uint8_t pinLOplus, uint8_t pinLOminus);
     void begin();
     int readECG();
+    int readLOplus();
+    int readLOminus();
     bool electrodesConnected();
 private:
     uint8_t _pinOUT;

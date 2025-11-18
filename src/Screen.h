@@ -8,12 +8,10 @@ public:
     bool begin();
     void clear();
     void showMessage(const String& message);
-    void showAllSensors(float &temperature1, float &temperature2, float &ecg);
+    void showAllSensors(float &temperature1, float &temperature2, bool &electrodesConnected, int &ecg);
     Adafruit_SSD1306& getDisplay() { return display; }
-    void drawECGPoint(int y);
     void updateDisplay();
 private:
     Adafruit_SSD1306 display;
-    int currentX = 0;
-    int lastY = -1;
+
 };

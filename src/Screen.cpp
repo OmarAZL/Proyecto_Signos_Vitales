@@ -6,13 +6,13 @@ Screen::Screen(uint8_t address, int width, int height)
 
 bool Screen::begin() {
     return display.begin(SSD1306_SWITCHCAPVCC, _address);
-}
+} 
 
 void Screen::clear() {
     display.clearDisplay();
 }
 
-void Screen::showAllSensors(float &temperature1, float &temperature2, float &ecg) {
+void Screen::showAllSensors(float &temperature1, float &temperature2, bool &electrodesConnected, int &ecg) {
     display.clearDisplay();
     display.setTextSize(1); // Normal size
     display.setTextColor(SSD1306_WHITE);
@@ -21,12 +21,11 @@ void Screen::showAllSensors(float &temperature1, float &temperature2, float &ecg
     display.print("T1: ");
     display.println(!isnan(temperature1) ? String(temperature1, 2) : "Error");
 
-
     display.print("T2: ");
     display.println(!isnan(temperature2) ? String(temperature2, 2) : "Error");
 
     display.print("ECG: "); 
-    display.println(!isnan(ecg) ? String(ecg, 2) : "Error");
+    display.println(electrodesConnected ? String(ecg) : "Electrodo desconectado");
     
     display.display();
 }
@@ -38,18 +37,6 @@ void Screen::showMessage(const String& message) {
     display.setCursor(0, 0);
     display.print(message);
     display.display(); // Update the display with the new message
-}
-
-void Screen::drawECGPoint(int y) {
-    if (lastY == -1) lastY = y;
-    display.drawLine(currentX - 1, lastY, currentX, y, SSD1306_WHITE);
-    lastY = y;
-    currentX++;
-    if (currentX >= display.width()) {
-        currentX = 0;
-        lastY = -1;
-        display.clearDisplay();
-    }
 }
 
 void Screen::updateDisplay() {

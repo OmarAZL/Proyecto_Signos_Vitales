@@ -14,4 +14,4 @@
 
 #define GY906_ADDRESS 0x5A
 
-#define REPORTING_PERIOD_MS 1000 // Periodo de reporte de datos en milisegundos
+#define BUTTON_PIN 26 // Ejemplo de GPIO para el botón [59]
